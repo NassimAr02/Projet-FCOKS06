@@ -1,0 +1,212 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+
+.custom-btn {
+    background-color: #333; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-btn i {
+    font-size: 20px;
+}
+
+.custom-btn:hover {
+    background-color: #f0c040;
+}
+
+
+.custom-btn:hover i.fa-user-plus,
+.custom-btn:hover i.fa-print,
+.custom-btn:hover i.fa-money-check-alt,
+.custom-btn:hover i.fa-sign-out-alt,
+.custom-btn:hover i.fas.fa-home {
+    animation: bounce 0.5s ease-in-out;
+}
+
+.formulaire {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.formulaire label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #333333;
+}
+
+.formulaire input[type="text"],
+.formulaire input[type="password"],
+.formulaire input[type="number"],
+.formulaire input[type="email"],
+.formulaire input[type="date"],
+.formulaire select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.formulaire .custom-btn {
+    width: 100%;
+}
+
+.formulaire p {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.table {
+    width: 100%;
+    max-width: 1500px;
+    border-collapse: collapse;
+    background-color: #f0f0f0;
+    color: #333333;
+    page-break-inside: avoid;
+}
+
+.table th,
+.table td {
+    border: 1px solid #0000ff;
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #cccccc;
+    color: solid bla; 
+}
+
+.table tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.actions input[type="submit"],
+.actions input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.actions input[type="submit"] {
+    background-color: #0000ff;
+}
+
+.actions input[type="reset"] {
+    background-color: #777777;
+}
+
+.actions input[type="submit"]:hover {
+    background-color: #0000e6;
+}
+
+.actions input[type="reset"]:hover {
+    background-color: #555555;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-container label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0000e6;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.radio-container input[type="radio"]:checked {
+    background: #0000e6;
+}
+
+.radio-container input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.radio-container input[type="radio"]:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
